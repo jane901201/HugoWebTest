@@ -5,7 +5,7 @@ googleAnalytics = ""
 hasCJKLanguage = false
 paginate = "6"
 summaryLength = "10"
-theme = "airspace-hugo"
+theme = "HugoWebTest"
 timeZone = "UTC"
 title = "Airspace | Creative Agency Hugo Template"
 [caches.assets]

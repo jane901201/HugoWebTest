@@ -18,7 +18,9 @@
       </div>
 
       <div class="collapse navbar-collapse" id="navigation">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-left">
+        </ul>
+        <ul class="nav navbar-nav navbar-center">
           <!-- menu active -->
           {{ $currentPage := . }}
           {{ range site.Menus.main }}
@@ -52,6 +54,8 @@
           </li>
           {{ end }}
           {{ end }}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
           <li>
             <!-- Language List -->
             {{ if .IsTranslated }}
