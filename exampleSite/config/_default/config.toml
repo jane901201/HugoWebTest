@@ -7,7 +7,7 @@ paginate = "6"
 summaryLength = "10"
 theme = "HugoWebTest"
 timeZone = "UTC"
-title = "Airspace | Creative Agency Hugo Template"
+title = "遊戲燈塔"
 [caches.assets]
 dir = ":resourceDir/_gen"
 maxAge = "720h"
