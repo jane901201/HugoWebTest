@@ -25,3 +25,10 @@ languageName = "German"
 languageCode = "de-at"
 contentDir = "content/german"
 weight = 4
+
+################ Traditional Chinese language ##################
+[zh-tw]
+languageName = "繁體中文"
+languageCode = "zh-tw"
+contentDir = "content/zh-tw"
+weight = 5
