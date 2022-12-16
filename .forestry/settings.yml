@@ -108,6 +108,10 @@ sections:
 - type: document
   path: exampleSite/config/_default/menus.fr.toml
   label: Menu (fr)
+- type: document
+  path: exampleSite/config/_default/menus.zh-tw.toml
+  label: Menu(zh-tw)
+  match: "**/*"
 - type: directory
   path: exampleSite/i18n
   label: i18n Translations
