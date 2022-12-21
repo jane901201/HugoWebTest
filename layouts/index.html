@@ -1,38 +1,38 @@
 {{ define "main" }}
 
-<!-- funfacts -->
-{{ with .Params.funfacts }}
+<!-- activity -->
+{{ with .Params.activity }}
 {{ if .enable }}
 <section class="testimonial">
   <div class="container">
-    <div class="row">
-      <div class="col align-self-center">
-        <div class="testimonial-carousel text-center">
-          <div class="testimonial-slider owl-carousel">
-            {{ range .testimonial_slider }}
-            <div>
-              <i class="fas fa-quote-left"></i>
-              {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-              <div class="user">
-                <img src="{{ .image | relURL }}" alt="client">
-                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
-              </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-9 col-xl-8">
+        {{ $images := .activity_slider }}
+        {{ $ratio := (slice 3 2) }}
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            {{ range $index, $value := $images }}
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}" {{ if eq
+              $index 0 }}class="active" aria-current="true" {{ end }}aria-label="Slide {{ add $index 1}}"></button>
+            {{ end }}
+          </div>
+          <div class="carousel-inner">
+            {{ range $index, $value := $images }}
+            <div class="carousel-item{{ if eq $index 0 }} active{{ end }}">
+              <img src="{{ .image | relURL }}" class="d-block w-100 img-fluid" alt="Slide {{ add $index 1}}">
             </div>
             {{ end }}
           </div>
-        </div>
-      </div>
-      <div class="col align-self-center">
-        <div class="testimonial-carousel text-center">
-          <div class="testimonial-slider owl-carousel">
-            {{ range .activity_slider }}
-            <div>
-              <div class="activity">
-                <img src="{{ .image | relURL }}" alt="activity">
-              </div>
-            </div>
-            {{ end }}
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /funfacts -->
+<!-- /activity -->
 
 <!-- banner -->
 {{ with .Params.banner }}

@@ -103,24 +103,37 @@ funfacts:
 
   activity_slider:
   # activity item loop
-  - image: "images/clients/avater-1.jpg"
+  - image: "images/activities/test.jpg"
+    index: 0
 
   # activity item loop
-  - image: "images/clients/avater-2.jpg"
+  - image: "images/activities/test.jpg"
+    index: 1
 
   # activity item loop
-  - image: "images/clients/avater-3.jpg"
+  - image: "images/activities/test.jpg"
+    index: 2
 
   # activity item loop
-  - image: "images/activities/test.png"
+  - image: "images/activities/test.jpg"
+    index: 3
 
 ############################# Activity ###############################
 activity:
   enable: true
 
-  # activity_slider:
-  # # activity item loop
-  # - image: "images/activities/test.jpg"
+  activity_slider:
+  # activity item loop
+  - image: "images/activities/test.jpg"
+
+  # activity item loop
+  - image: "images/activities/test.jpg"
+
+  # activity item loop
+  - image: "images/activities/test.jpg"
+
+  # activity item loop
+  - image: "images/activities/test.jpg"
 
 ---
 
