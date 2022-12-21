@@ -38,26 +38,3 @@ weight = "4"
 name = "Project"
 url = "project/"
 weight = 3
-[[main]]
-hasChildren = true
-name = "More"
-weight = 5
-[[main]]
-name = "Service"
-parent = "More"
-url = "service/"
-weight = 1
-[[main]]
-name = "Pricing"
-parent = "More"
-url = "pricing/"
-weight = 2
-[[main]]
-name = "FAQ"
-parent = "More"
-url = "faq/"
-weight = 3
-[[main]]
-name = "Contact"
-url = "contact/"
-weight = 6
