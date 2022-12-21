@@ -14,9 +14,8 @@ banner:
 ############################# About #################################
 about:
   enable: true
-  title: "About Us"
-  description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id."
+  title: "了解遊戲燈塔"
+  description: "有一段簡短介紹"
   image: "images/wrapper-img.png"
 
 
@@ -49,12 +48,12 @@ service:
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "We design delightful digital experiences."
-  content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  discord_icon: "images/discord.svg"
+  title: "加入我們DC群組"
   button:
     enable: true
-    label: "Tell Us Your Story"
-    link: "contact/"
+    label: "加入"
+    link: "https://discord.com/"
 
 ############################# Funfacts ###############################
 funfacts:
@@ -100,19 +99,6 @@ funfacts:
     image: "images/clients/avater-3.jpg"
     designation: "CEO-Themefisher"
     content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
-
-  activity_slider:
-  # activity item loop
-  - image: "images/activities/test.jpg"
-
-  # activity item loop
-  - image: "images/activities/test.jpg"
-
-  # activity item loop
-  - image: "images/activities/test.jpg"
-
-  # activity item loop
-  - image: "images/activities/test.jpg"
 
 ############################# Activity ###############################
 activity:

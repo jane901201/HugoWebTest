@@ -27,26 +27,19 @@
         </div>
       </div>
     </div> -->
-    
+
     <!-- Bootstrap v3 -->
     <div class="row">
       <div class="col align-self-center">
         <div class="testimonial-carousel text-center"> 
           <div id="carouselExampleIndicators" class="testimonial-slider owl-carousel">
             {{ $images := .activity_slider }}
-            {{ $ratio := (slice 3 2) }}    
             {{ range $images }}
             <div>
               <div class="activity">
                 <img src="{{ .image | relURL }}" alt="activity">
               </div>
             </div>
-            <div class="carousel-indicators">
-              {{ range $index, $value := $images }}
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $index }}" {{ if eq
-                $index 0 }}class="active" aria-current="true" {{ end }}aria-label="Slide {{ add $index 1}}"></button>
-              {{ end }}
-            </div>  
             {{ end }}
           </div>
         </div>
@@ -58,30 +51,6 @@
 {{ end }}
 <!-- /activity -->
 
-<!-- banner -->
-{{ with .Params.banner }}
-{{ if .enable }}
-<section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image: url('{{ .bg_image | relURL }}');">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-          {{ with .button }}
-          {{ if .enable }}
-          <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /banner -->
-
 <!-- about -->
 {{ with .Params.about }}
 {{ if .enable }}
@@ -90,16 +59,10 @@
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <div class="block">
-          <div class="section-title">
+          <div class="section-title text-center">
             {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
             {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
           </div>
-          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-12">
-        <div class="block">
-          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
         </div>
       </div>
     </div>
@@ -109,33 +72,23 @@
 {{ end }}
 <!-- /about -->
 
-<!-- portfolio -->
-{{ with .Params.portfolio }}
-{{ if .enable }}
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL }}')">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-6">
-        {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        {{ with .button }}
-        {{ if .enable }}
-        <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
-      </div>
+<!-- News -->
+<div class="widget widget-latest-post">
+  {{ range first 1 (where site.Pages "Type" "post") }}
+  <div class="media">
+    <a class="pull-left" href="{{ .RelPermalink }}">
+      {{ if isset .Params "image" }}
+      <img class="media-object" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+      {{ end }}
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+      <p>{{ .Summary | truncate 50 }}</p>
     </div>
   </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /portfolio -->
-
-<!-- service -->
-{{ if .Params.service.enable }}
-{{ partial "service.html" . }}
-{{ end }}
-<!-- /service -->
+  {{ end }}
+</div>
+<!-- /News -->
 
 <!-- call to action -->
 {{ if .Params.cta.enable }}
