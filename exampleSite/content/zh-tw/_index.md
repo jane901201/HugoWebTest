@@ -104,19 +104,15 @@ funfacts:
   activity_slider:
   # activity item loop
   - image: "images/activities/test.jpg"
-    index: 0
 
   # activity item loop
   - image: "images/activities/test.jpg"
-    index: 1
 
   # activity item loop
   - image: "images/activities/test.jpg"
-    index: 2
 
   # activity item loop
   - image: "images/activities/test.jpg"
-    index: 3
 
 ############################# Activity ###############################
 activity:
