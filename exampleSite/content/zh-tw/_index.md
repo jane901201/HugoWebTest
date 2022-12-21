@@ -101,5 +101,26 @@ funfacts:
     designation: "CEO-Themefisher"
     content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
 
+  activity_slider:
+  # activity item loop
+  - image: "images/clients/avater-1.jpg"
+
+  # activity item loop
+  - image: "images/clients/avater-2.jpg"
+
+  # activity item loop
+  - image: "images/clients/avater-3.jpg"
+
+  # activity item loop
+  - image: "images/activities/test.png"
+
+############################# Activity ###############################
+activity:
+  enable: true
+
+  # activity_slider:
+  # # activity item loop
+  # - image: "images/activities/test.jpg"
 
 ---
+
