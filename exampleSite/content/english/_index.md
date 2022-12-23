@@ -49,12 +49,12 @@ service:
 cta:
   enable: true
   bg_image: "images/call-to-action-bg.jpg"
-  title: "We design delightful digital experiences."
-  content: "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  discord_icon: "images/discord.svg"
+  title: "Join our Discord"
   button:
     enable: true
-    label: "Tell Us Your Story"
-    link: "contact/"
+    label: "Join"
+    link: "https://discord.com/"
 
 ############################# Funfacts ###############################
 funfacts:

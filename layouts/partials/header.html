@@ -19,8 +19,6 @@
 
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav navbar-left">
-        </ul>
-        <ul class="nav navbar-nav navbar-center">
           <!-- menu active -->
           {{ $currentPage := . }}
           {{ range site.Menus.main }}
@@ -53,7 +51,7 @@
               href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{else}}{{.URL | relLangURL}}{{end}}">{{.Name}}</a>
           </li>
           {{ end }}
-          {{ end }}
+          {{ end }}          
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
@@ -79,19 +77,16 @@
             </select>
             {{ end }}
           </li>
+          <li>
+            <ul class="social-icons">
+              {{ range site.Params.social -}}
+              <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+              {{- end }}
+            </ul>  
+          </li>    
         </ul>
       </div>
     </nav>
   </div>
 </header>
 <!-- /navigation -->
-
-<style>
-  @media (min-width: 768px) {
-    .navbar-nav.navbar-center {
-      position: absolute;
-      left: 50%;
-      transform: translatex(-50%);
-    }
-  }
-</style>
