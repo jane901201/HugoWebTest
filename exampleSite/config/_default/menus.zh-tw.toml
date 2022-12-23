@@ -27,6 +27,14 @@ name = "首頁"
 url = ""
 weight = 1
 [[main]]
+name = "最新消息"
+url = "blog/"
+weight = 4
+[[main]]
+name = "近期活動"
+url = ""
+weight = "5"
+[[main]]
 name = "關於我們"
 url = "about/"
 weight = 2
@@ -34,7 +42,3 @@ weight = 2
 name = "遊戲作品"
 url = "project/"
 weight = 3
-[[main]]
-name = "最新消息"
-url = "blog/"
-weight = 4
