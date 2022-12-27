@@ -77,7 +77,9 @@
   <div class="container">
     <div class="row">
       <div class="col align-self-center">
-        <h2 class="text-center">{{ .Title }}</h2>
+        {{ with .Params.news }}
+        {{ with .title }}<h2 class="text-center">{{ . | markdownify }}</h2>{{ end }}
+        {{end}}
         <div class="widget widget-latest-news">
           {{ range first 3 (where site.Pages "Type" "post") }}
           <div class="media">
