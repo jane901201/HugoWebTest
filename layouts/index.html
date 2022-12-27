@@ -4,7 +4,7 @@
 {{ with .Params.activity }}
 {{ if .enable }}
 <section class="testimonial">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Bootstrap v5 -->
     <!-- <div class="row d-flex justify-content-center"> 
       <div class="col-lg-9 col-xl-8">
@@ -31,13 +31,13 @@
     <!-- Bootstrap v3 -->
     <div class="row">
       <div class="col align-self-center">
-        <div class="testimonial-carousel text-center"> 
+        <div class="testimonial-carousel"> 
           <div id="carouselExampleIndicators" class="testimonial-slider owl-carousel">
             {{ $images := .activity_slider }}
             {{ range $images }}
             <div>
               <div class="activity">
-                <img src="{{ .image | relURL }}" alt="activity">
+                <img src="{{ .image | relURL }}" alt="activity" >
               </div>
             </div>
             {{ end }}
