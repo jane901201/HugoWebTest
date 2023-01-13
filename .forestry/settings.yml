@@ -19,7 +19,7 @@ sections:
   templates:
   - post
 - type: directory
-  path: exampleSite\content\zh-tw\blog
+  path: exampleSite/content/zh-tw/blog
   label: Post(zh-tw)
   create: documents
   match: "**/*"
