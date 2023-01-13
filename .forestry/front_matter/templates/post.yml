@@ -32,3 +32,5 @@ fields:
   name: type
   label: type
   default: post
+pages:
+- exampleSite/content/zh-tw/blog/測試文章.md
