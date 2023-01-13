@@ -19,10 +19,12 @@ sections:
   templates:
   - post
 - type: directory
-  path: ''
+  path: exampleSite\content\zh-tw\blog
   label: Post(zh-tw)
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - post
 - type: heading
   label: Author
 - type: directory
