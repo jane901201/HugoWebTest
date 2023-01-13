@@ -18,6 +18,11 @@ sections:
   match: "**/*"
   templates:
   - post
+- type: directory
+  path: ''
+  label: Post(zh-tw)
+  create: all
+  match: "**/*"
 - type: heading
   label: Author
 - type: directory
