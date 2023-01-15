@@ -12,7 +12,7 @@ info = "https://matchworkshop.itch.io/somm"
 label = "itch連結"
 [[information]]
 info = "https://indiecabin.net/project/SOMM"
-label = "遊戲連結"
+label = "木屋連結"
 [[information]]
 info = "TEST"
 label = "TEST"
