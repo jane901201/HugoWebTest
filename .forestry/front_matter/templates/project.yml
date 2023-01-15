@@ -13,7 +13,7 @@ fields:
   type: text
   config:
     required: false
-  label: descrption
+  label: description
 - type: file
   name: title_image
   label: title_image
