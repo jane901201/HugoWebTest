@@ -1,5 +1,5 @@
 ---
-title: "我們的作品"
+title: "Our Project"
 description: "this is meta description"
 draft: false
 bg_image: "images/feature-bg.jpg"
