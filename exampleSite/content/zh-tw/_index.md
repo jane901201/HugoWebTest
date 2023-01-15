@@ -52,13 +52,13 @@ service:
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
+#  bg_image: "images/call-to-action-bg.jpg"
   discord_icon: "images/discord.svg"
   title: "加入我們DC群組"
-  button:
-    enable: true
-    label: "加入"
-    link: "https://discord.com/"
+#  button:
+#    enable: true
+#    label: "加入"
+#    link: "https://discord.com/"
 
 ############################# Funfacts ###############################
 funfacts:
