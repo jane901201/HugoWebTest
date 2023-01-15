@@ -6,12 +6,17 @@ fields:
   name: title
   label: title
 - type: text
-  name: description
-  label: description
+  name: subtitle
+  label: subtitle
   description: this is meta description
+- name: descrption
+  type: text
+  config:
+    required: false
+  label: descrption
 - type: file
-  name: image
-  label: image
+  name: title_image
+  label: title_image
 - type: file
   name: bg_image
   label: bg image
@@ -32,4 +37,5 @@ fields:
     label: info
 pages:
 - exampleSite/content/zh-tw/project/_shape-of-my-mind.md
+- exampleSite/content/zh-tw/project/test2.md
 - exampleSite/content/zh-tw/project/測試作品.md

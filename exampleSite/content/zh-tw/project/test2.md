@@ -5,7 +5,7 @@ description = "哪裡才有我的容身之處呢？ 開始一趟短短的、溫�
 descrption = "wewe"
 image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
 subtitle = "wew"
-title = "塑造_shape of my mind"
+title = "Test2TT"
 title_image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
 [[information]]
 info = "益智解謎"
