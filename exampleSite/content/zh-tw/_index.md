@@ -1,24 +1,11 @@
 ---
 title: "遊戲燈塔"
 
-############################### Banner ##############################
-banner:
-  enable: true
-  bg_image: "images/slider-bg.jpg"
-  bg_overlay: true
-  title: "A Digital Marketing <br/> & Design Agency"
-  content: "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
-  button:
-    enable: true
-    label: "Discover Our Project"
-    link: "project/"
-
 ############################# About #################################
 about:
   enable: true
   title: "了解遊戲燈塔"
   description: "有一段簡短介紹"
-  image: "images/wrapper-img.png"
 
 ############################# News #################################
 news:
@@ -89,18 +76,11 @@ funfacts:
 activity:
   enable: true
 
+  # activity item loop
   activity_slider:
-  # activity item loop
   - image: "images/activities/test.jpg"
-
-  # activity item loop
   - image: "images/activities/test.jpg"
-
-  # activity item loop
   - image: "images/activities/test.jpg"
-
-  # activity item loop
   - image: "images/activities/test.jpg"
 
 ---
-
