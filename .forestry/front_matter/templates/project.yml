@@ -10,8 +10,8 @@ fields:
   label: description
   description: this is meta description
 - type: file
-  name: image
-  label: image
+  name: title_image
+  label: title_image
 - type: file
   name: bg_image
   label: bg image
