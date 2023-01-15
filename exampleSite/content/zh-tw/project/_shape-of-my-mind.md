@@ -5,6 +5,9 @@ description = "哪裡才有我的容身之處呢？ 開始一趟短短的、溫�
 image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
 title = "塑造_shape of my mind"
 [[information]]
+info = "哪裡才有我的容身之處呢？ 開始一趟短短的、溫馨的尋找之旅──"
+label = "簡介"
+[[information]]
 info = "2020/11/22"
 label = "發布日"
 [[information]]
@@ -13,9 +16,6 @@ label = "itch連結"
 [[information]]
 info = "https://indiecabin.net/project/SOMM"
 label = "木屋連結"
-[[information]]
-info = "TEST"
-label = "TEST"
 [[information]]
 info = "TEST2"
 label = "TEST2"
