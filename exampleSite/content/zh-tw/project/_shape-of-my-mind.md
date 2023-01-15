@@ -16,8 +16,5 @@ label = "itch連結"
 [[information]]
 info = "https://indiecabin.net/project/SOMM"
 label = "木屋連結"
-[[information]]
-info = "TEST2"
-label = "TEST2"
 
 +++
