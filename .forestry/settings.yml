@@ -43,6 +43,13 @@ sections:
   match: "**/*"
   templates:
   - project
+- type: directory
+  path: exampleSite/content/zh-tw/project
+  label: Project(zh-tw)
+  create: documents
+  match: "**/*"
+  templates:
+  - project
 - type: heading
   label: Other Pages
 - type: directory
@@ -54,6 +61,13 @@ sections:
 - type: directory
   path: exampleSite/content/english
   label: All Pages (en)
+  create: all
+  match: "**/*"
+  templates:
+  - new-page
+- type: directory
+  path: exampleSite/content/zh-tw
+  label: All Pages(zh-tw)
   create: all
   match: "**/*"
   templates:

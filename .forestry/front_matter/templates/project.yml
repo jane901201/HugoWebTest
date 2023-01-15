@@ -30,3 +30,6 @@ fields:
   - type: text
     name: info
     label: info
+pages:
+- exampleSite/content/zh-tw/project/_shape-of-my-mind.md
+- exampleSite/content/zh-tw/project/測試作品.md
