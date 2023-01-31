@@ -7,6 +7,7 @@ image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
 subtitle = "wew"
 title = "塑造_shape of my mind"
 title_image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
+screenshot_image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
 [[information]]
 info = "益智解謎"
 label = "類型"
@@ -19,5 +20,6 @@ label = "itch連結"
 [[information]]
 info = "https://indiecabin.net/project/SOMM"
 label = "木屋連結"
-
 +++
+
+這邊要打遊戲簡介。
