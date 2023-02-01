@@ -2,6 +2,7 @@
 bg_image = "/images/c_jws_creationimg1_indiecabin_1609583083.png"
 category = "動作"
 description = "運用掩體和終結技擺平接連而來的敵人"
+image = "/images/c_jws_homeimg_indiecabin_1609583083.png"
 screenshot_image_carousel = []
 subtitle = ""
 title = "JohnWickSimulation"
