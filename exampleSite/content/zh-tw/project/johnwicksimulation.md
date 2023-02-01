@@ -1,7 +1,8 @@
 +++
 bg_image = "/images/c_jws_creationimg1_indiecabin_1609583083.png"
-category = "橫向卷軸"
+category = "動作"
 description = ""
+screenshot_image_carousel = []
 subtitle = ""
 title = "JohnWickSimulation"
 title_image = "/images/c_jws_homeimg_indiecabin_1609583083.png"
