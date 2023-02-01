@@ -2,6 +2,7 @@
 bg_image = "/images/c_cyberrupt_homeimg_indiecabin_1627487531.gif"
 category = "射擊"
 description = ""
+image = "/images/c_cyberrupt_creationimg1_indiecabin_1627656597.png"
 screenshot_image_carousel = []
 subtitle = ""
 title = "Cyberrupt"
