@@ -2,6 +2,7 @@
 bg_image = "/images/k5r81e.png"
 category = "恐怖"
 description = "不知身處何方、不解眼前為何物，只能循著僅有的線索，緩慢地試圖前進"
+image = "/images/c_torichk_homeimg_indiecabin_1634704636.jpg"
 screenshot_image_carousel = []
 subtitle = ""
 title = "Torichk"
