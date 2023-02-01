@@ -2,7 +2,6 @@
 bg_image = "/images/c_somm_creationimg1_indiecabin_1606544120.png"
 category = "益智解謎"
 description = "哪裡才有我的容身之處呢？ 開始一趟短短的、溫馨的尋找之旅──"
-descrption = "wewe"
 image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
 screenshot_image = "/images/c_somm_homeimg_indiecabin_1606041992.png"
 subtitle = "wew"
