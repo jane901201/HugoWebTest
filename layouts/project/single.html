@@ -7,10 +7,24 @@
 <section class="portfolio-single-page section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+      <!-- <div class="col-md-8">
         {{ with .Params.screenshot_image }}
         <img class="img-responsive w-100" src="{{ . | relURL }}" alt="">
         {{ end }}
+      </div> -->
+      <!-- Bootstrap v3 -->
+      <div class="col-md-8">
+        <div class="testimonial-carousel"> 
+          <div id="carouselExampleIndicators" class="testimonial-slider owl-carousel">
+            {{ range .Params.screenshot_image_carousel }}
+            <div>
+              <div class="activity">
+                <img src="{{ .image | relURL }}" alt="activity" >
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
       </div>
       <div class="col-md-4">
         <div class="row">
