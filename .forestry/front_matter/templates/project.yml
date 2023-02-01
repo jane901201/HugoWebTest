@@ -9,7 +9,7 @@ fields:
   name: subtitle
   label: subtitle
   description: this is meta description
-- name: descrption
+- name: description
   type: text
   config:
     required: false
