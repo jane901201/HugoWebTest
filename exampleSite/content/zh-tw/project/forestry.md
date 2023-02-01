@@ -1,6 +1,6 @@
 +++
 bg_image = "/images/c_jws_creationimg1_indiecabin_1609583083.png"
-category = ""
+category = "Test"
 description = ""
 subtitle = "測試跑馬燈"
 title = "Forestry跑馬燈新增測試專案"
