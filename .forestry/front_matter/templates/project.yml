@@ -37,5 +37,6 @@ fields:
     label: info
 pages:
 - exampleSite/content/zh-tw/project/_shape-of-my-mind.md
+- exampleSite/content/zh-tw/project/move-up.md
 - exampleSite/content/zh-tw/project/test2.md
 - exampleSite/content/zh-tw/project/測試作品.md
