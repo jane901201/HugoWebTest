@@ -50,6 +50,7 @@ fields:
   label: screenshot_image_carousel
 pages:
 - exampleSite/content/zh-tw/project/_shape-of-my-mind.md
+- exampleSite/content/zh-tw/project/cyberrupt.md
 - exampleSite/content/zh-tw/project/forestry.md
 - exampleSite/content/zh-tw/project/johnwicksimulation.md
 - exampleSite/content/zh-tw/project/move-up.md
