@@ -21,7 +21,7 @@ info = "https://indiecabin.net/project/JWS"
 label = "木屋連結"
 
 +++
-遊戲簡介：
+**遊戲簡介**
 
 約翰‧維克在路上遭遇了襲擊
 
