@@ -1,6 +1,6 @@
 +++
 bg_image = "/images/c_cyberrupt_homeimg_indiecabin_1627487531.gif"
-category = ""
+category = "Test"
 description = "應該要可以顯示在網站上了吧"
 image = "/images/c_packsgrocerystore_homeimg_indiecabin_1625314964.png"
 subtitle = "測試跑馬燈"
