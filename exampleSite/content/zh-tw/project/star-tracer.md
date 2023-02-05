@@ -1,7 +1,7 @@
 +++
 bg_image = "/images/einvnv.png"
 category = "音樂"
-description = ""
+description = "這是一款充滿動作性的節奏遊戲且帶有敘事要素。擊中星型音符以獲得能量，同時小心宇宙怪物！"
 image = "/images/title.png"
 subtitle = ""
 title = "Star Tracer"
