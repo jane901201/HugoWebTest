@@ -1,11 +1,11 @@
 +++
-bg_image = ""
+bg_image = "/images/einvnv.png"
 category = "音樂"
 description = ""
-image = "/images/bq1mvy.jpg"
+image = "/images/title.png"
 subtitle = ""
 title = "Star Tracer"
-title_image = "/images/einvnv.png"
+title_image = "/images/title.png"
 [[information]]
 info = "2022/05/22"
 label = "發布日"
@@ -19,7 +19,13 @@ label = "木屋連結"
 info = "https://matchworkshop.itch.io/star-tracer"
 label = "itch連結"
 [[screenshot_image_carousel]]
-image = ""
+image = "/images/einvnv.png"
+[[screenshot_image_carousel]]
+image = "/images/uphssr.jpg"
+[[screenshot_image_carousel]]
+image = "/images/bq1mvy.jpg"
+[[screenshot_image_carousel]]
+image = "/images/bq1mvy.jpg"
 
 +++
 **遊戲介紹**
