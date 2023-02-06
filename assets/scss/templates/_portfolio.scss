@@ -89,9 +89,6 @@
   }
 }
 
-
-
-
 // Portfolio Single Page
 .portfolio-single-page {
   .project-details {
@@ -114,6 +111,26 @@
     ul {
       li {
         margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.platform-tag{
+  ul{
+    li{
+      padding-right: 5px;
+      a{
+        background-color: rgb(65, 139, 140);
+        text-align: center;
+      }
+      a:visited{
+        color: white;
+        background-color: rgb(65, 139, 140);
+      }
+      a:hover{
+        color: white;
+        background-color: gray;
       }
     }
   }

@@ -43,15 +43,20 @@
           </div>
         </div>
         <div class="row">
-          <ul class="nav bg-success">
-            <li class="nav-item">
-              {{ range .Params.platform }}
-              <a class="nav-link" target="_blank" rel="noopener" href="{{ .url }}">
-                {{ .name }}
-              </a>
-              {{ end }}
-            </li>
-          </ul>
+          {{ range .Params.platform }}
+          <div class="col-md-auto"> 
+            <div class="platform-tag">
+              <!-- TODO:nav-justified not correct working? -->
+              <ul class="nav navbar-nav nav-pills nav-fill"> 
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" rel="noopener" href="{{ .url }}" >
+                    {{ .name }}
+                  </a>
+                </li>
+              </ul>  
+            </div>
+          </div>
+          {{ end }}
         </div>
       </div>
     </div>
