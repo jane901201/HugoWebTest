@@ -1,6 +1,6 @@
 ---
-title: "Latest News"
-description: "this is meta description"
-draft: false
-bg_image: "images/feature-bg.jpg"
+title: Latest News
+description: 最新消息
+bg_image: "/images/old-newspaper-350376_960_720.jpg"
+
 ---

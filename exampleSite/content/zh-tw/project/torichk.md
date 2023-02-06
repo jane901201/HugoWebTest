@@ -2,11 +2,10 @@
 bg_image = "/images/k5r81e.png"
 category = "恐怖"
 description = "不知身處何方、不解眼前為何物，只能循著僅有的線索，緩慢地試圖前進"
-image = "/images/c_torichk_homeimg_indiecabin_1634704636.jpg"
-screenshot_image_carousel = []
+image = "/images/title-1.png"
 subtitle = ""
 title = "Torichk"
-title_image = "/images/c_torichk_homeimg_indiecabin_1634704636.jpg"
+title_image = "/images/title-1.png"
 [[information]]
 info = "恐怖"
 label = "類型"
@@ -19,6 +18,10 @@ label = "itch連結"
 [[information]]
 info = "https://indiecabin.net/project/Torichk"
 label = "木屋連結"
+[[screenshot_image_carousel]]
+image = "/images/k5r81e.png"
+[[screenshot_image_carousel]]
+image = "/images/85dmw_.png"
 
 +++
 **遊戲簡介**

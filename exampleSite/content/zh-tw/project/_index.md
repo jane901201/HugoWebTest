@@ -1,6 +1,6 @@
 ---
-title: "我們的作品"
-description: "this is meta description"
-draft: false
-bg_image: "images/feature-bg.jpg"
+title: Our Works
+description: 我們的作品
+bg_image: "/images/android-tv-game-controller-1535038_960_720.jpg"
+
 ---
