@@ -84,6 +84,8 @@
             {{ range $index, $elements := .tabs }}
             <li {{ if eq $index 0 }} class="active" {{ end }}><a href="#{{ .name | urlize }}"
                 data-toggle="tab">{{ .name }}</a></li>
+            <!-- TODO:<li {{ if eq $index 0 }} class="active" {{ end }}><a href="#{{ .name | urlize }}"
+              data-bs-toggle="tab">{{ .name }}</a></li> -->
             {{ end }}
           </ul>
           <div class="tab-content">
