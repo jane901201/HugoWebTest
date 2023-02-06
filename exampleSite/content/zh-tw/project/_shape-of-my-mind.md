@@ -21,6 +21,14 @@ label = "itch連結"
 info = "https://indiecabin.net/project/SOMM"
 label = "木屋連結"
 
+[[platform]]
+name = "Itch.io"
+url = "https://matchworkshop.itch.io/somm"
+[[platform]]
+name = "木屋"
+url = "https://indiecabin.net/project/SOMM"
+
+
 +++
 遊戲簡介：哪裡才有我的容身之處呢？ 開始一趟短短的、溫馨的尋找之旅──
 
