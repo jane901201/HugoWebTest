@@ -40,6 +40,24 @@ fields:
   - type: text
     name: info
     label: info
+- name: platform
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: name
+  - name: url
+    type: text
+    config:
+      required: false
+    label: url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: platform
 - name: screenshot_image_carousel
   type: field_group_list
   fields:
