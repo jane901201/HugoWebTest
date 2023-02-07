@@ -11,10 +11,9 @@
       <div class="col-md-12">
         <div class="block">
           <div class="portfolio-menu">
-            <!-- TODO:Fixed mult click bug. -->
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
               <input type="radio" name="shuffle-filter" id="all" class="btn-check" value="all" checked>
-              <label class="btn btn-sm btn-primary active" for="all">
+              <label class="btn btn-sm btn-primary" for="all">
                 {{ i18n "all" }}
               </label>
               {{ $categories := slice -}}
@@ -22,7 +21,8 @@
               {{ $categories = $categories | append .Params.category -}}
               {{ end -}}
               {{ range ( $categories | uniq ) -}}
-              <input type="radio" name="shuffle-filter" id="{{ . }}" autocomplete="off" class="btn-check" value="{{ . | urlize }}">
+              <input type="radio" name="shuffle-filter" id="{{ . }}" autocomplete="off" class="btn-check"
+                value="{{ . | urlize }}">
               <label class="btn btn-sm btn-primary" for="{{ . }}">
                 {{ . }}
               </label>
