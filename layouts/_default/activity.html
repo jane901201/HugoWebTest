@@ -1,9 +1,20 @@
 {{ define "main" }}
 
 {{ partial "page-title.html" . }}
-	<iframe src="https://calendar.google.com/calendar/embed?src=wingjack717%40gmail.com&ctz=Asia%2FTaipei" style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
-		
-
-	</iframe>
-
+<section class="activity">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col align-self-center">
+            <div class="activity">
+                <div class="responsiveGoogleCalendar">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://calendar.google.com/calendar/embed?src=wingjack717%40gmail.com&ctz=Asia%2FTaipei" style="border: 0" frameborder="0" scrolling="no">
+                        </iframe>            
+                    </div>                            
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
 {{ end }}
