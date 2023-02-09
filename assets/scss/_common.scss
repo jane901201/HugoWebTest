@@ -297,8 +297,9 @@ input[type="tel"] {
 
 
 .page-title {
-  padding: 100px 0;
-  //TODO:@extend .overly;
+  .mask{
+    padding: 100px 0;
+  }
 
   .block {
     text-align: center;
@@ -600,12 +601,15 @@ input[type="tel"] {
   }
 }
 
-
+.mask{
+  --bs-bg-opacity: 1;
+  background-color: rgba(darken($color-primary, 25), var(--bs-bg-opacity)) !important;    
+}
 
 .overly {
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -614,7 +618,7 @@ input[type="tel"] {
     right: 0;
     width: 100%;
     height: 100%;
-    background: darken($color-primary, 25);
+    background-color: darken($color-primary, 25);
     opacity: 0.8;
   }
 }

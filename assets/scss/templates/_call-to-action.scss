@@ -1,7 +1,9 @@
 .call-to-action {
   text-align: center;
-  padding: 70px 0px;
-  background: rgba(0, 0, 0, 0.7);
+
+  .mask{
+    padding: 70px 0px;
+  }
 
   @include tablet {
     padding-top: 20px;
