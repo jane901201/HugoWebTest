@@ -78,9 +78,8 @@ activity:
 
   # activity item loop
   activity_slider:
-  - image: "images/activities/test.jpg"
-  - image: "images/activities/test.jpg"
-  - image: "images/activities/test.jpg"
-  - image: "images/activities/test.jpg"
+  - image: "images/c_pineapple-shrimp-balls_creationimg4_indiecabin_1615199447.jpg"
+  - image: "images/c_sanguinerose_creationimg3_indiecabin_1607784764.png"
+  - image: "images/c_cyberrupt_creationimg5_indiecabin_1627656598.png"
 
 ---
