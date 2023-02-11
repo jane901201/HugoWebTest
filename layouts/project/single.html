@@ -34,13 +34,28 @@
         </div>
         <div class="row">
           <div class="project-details">
-            <h4>Project Details</h4>
+            <h4>{{ .Params.description }}</h4>
             <ul>
               {{ range .Params.information }}
               <li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
               {{ end }}
             </ul>
           </div>
+        </div>
+        <div class="row">
+          {{ range .Params.platform }}
+          <div class="col-md-auto"> 
+            <div class="platform-tag">
+              <ul class="navbar nav-pills nav-justified"> 
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" rel="noopener" href="{{ .url }}" >
+                    {{ .name }}
+                  </a>
+                </li>
+              </ul>  
+            </div>
+          </div>
+          {{ end }}
         </div>
       </div>
     </div>

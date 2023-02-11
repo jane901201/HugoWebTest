@@ -11,17 +11,20 @@
       <div class="col-md-12">
         <div class="block">
           <div class="portfolio-menu">
-            <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
-              <label class="btn btn-sm btn-primary active">
-                <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" name="shuffle-filter" id="all" class="btn-check" value="all" checked>
+              <label class="btn btn-sm btn-primary" for="all">
+                {{ i18n "all" }}
               </label>
               {{ $categories := slice -}}
               {{ range .Data.Pages -}}
               {{ $categories = $categories | append .Params.category -}}
               {{ end -}}
               {{ range ( $categories | uniq ) -}}
-              <label class="btn btn-sm btn-primary">
-                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
+              <input type="radio" name="shuffle-filter" id="{{ . }}" autocomplete="off" class="btn-check"
+                value="{{ . | urlize }}">
+              <label class="btn btn-sm btn-primary" for="{{ . }}">
+                {{ . }}
               </label>
               {{- end }}
             </div>

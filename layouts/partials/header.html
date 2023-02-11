@@ -1,24 +1,21 @@
 <!-- navigation -->
 <header class="{{if site.Params.navbar_fixed}}sticky-top{{end}} navigation">
-  <div class="container-fluid">
-    <!-- navbar -->
-    <nav class="navbar">
-
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
       <div class="navbar-header">
         <!-- navbar toggler -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation" aria-expanded="true">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>    
         <!-- navbar brand/logo -->
         <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
           {{ partial "logo.html" . }}
         </a>
       </div>
 
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="nav navbar-nav navbar-left">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav me-auto">
           <!-- menu active -->
           {{ $currentPage := . }}
           {{ range site.Menus.main }}
@@ -32,7 +29,7 @@
           {{ $active := eq $childURL $pageURL }}
           {{ if $active }}current{{ end }}
           {{ end }}">
-            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               {{ .Name }} <span class="fas fa-angle-down"></span>
             </a>
@@ -53,7 +50,7 @@
           {{ end }}
           {{ end }}          
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav ms-auto">
           <li>
             <!-- Language List -->
             {{ if .IsTranslated }}
@@ -86,7 +83,7 @@
           </li>    
         </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 <!-- /navigation -->
