@@ -5,7 +5,7 @@ title: "遊戲燈塔"
 about:
   enable: true
   title: "了解遊戲燈塔"
-  description: "有一段簡短介紹"
+  description: "本社群是一個追求製作遊戲技術的社團，我們致力於提供教學、組團、以及Know how分享等資源，讓以遊戲開發為志向的創作者能夠擁有更多切磋琢磨的機會；若是剛接觸這個領域的創作者們，也能在業界人士的充分引導下提升技術，藉此讓所有同好能夠享受製作遊戲的樂趣。"
 
 ############################# News #################################
 news:
@@ -39,8 +39,8 @@ service:
 ############################ call to action ###########################
 cta:
   enable: true
-#  bg_image: "images/call-to-action-bg.jpg"
-  discord_icon: "images/discord.svg"
+  bg_image: "images/lighthouse01.jpg"
+  discord_icon: "images/discord2.svg"
   title: "加入我們DC群組"
 #  button:
 #    enable: true
@@ -78,8 +78,8 @@ activity:
 
   # activity item loop
   activity_slider:
-  - image: "images/c_pineapple-shrimp-balls_creationimg4_indiecabin_1615199447.jpg"
-  - image: "images/c_sanguinerose_creationimg3_indiecabin_1607784764.png"
-  - image: "images/c_cyberrupt_creationimg5_indiecabin_1627656598.png"
+  - image: "images/pineapple_1920850.png"
+  - image: "images/sanguinerose_1920850.png"
+  - image: "images/cyberrupt_1920850.png"
 
 ---

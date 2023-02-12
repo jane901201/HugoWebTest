@@ -1,10 +1,10 @@
 .footer {
-  background: darken( $light, 1.5);
-  min-height: 205px;
+ background: darken( $light, 10);
+ min-height: 20px;
   text-align: center;
-  padding-top: 67px;
+  padding-top: 10px;
   p {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 25px;
     color: lighten( $black, 56.86274509803921 );
   }

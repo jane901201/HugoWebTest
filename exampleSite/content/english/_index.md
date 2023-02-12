@@ -35,8 +35,8 @@ service:
 ############################ call to action ###########################
 cta:
   enable: true
-  bg_image: "images/call-to-action-bg.jpg"
-  discord_icon: "images/discord.svg"
+  bg_image: "images/lighthouse01.jpg"
+  discord_icon: "images/discord2.svg"
   title: "Join our Discord"
   button:
     enable: true
