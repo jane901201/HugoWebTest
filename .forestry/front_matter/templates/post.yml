@@ -33,5 +33,6 @@ fields:
   label: type
   default: post
 pages:
+- exampleSite/content/zh-tw/blog/時間測試.md
 - exampleSite/content/zh-tw/blog/線上課程招生資訊.md
 - exampleSite/content/zh-tw/blog/線上課程招生資訊.md
