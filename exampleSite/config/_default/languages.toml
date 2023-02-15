@@ -8,6 +8,6 @@ weight = 1
 ################ Traditional Chinese language ##################
 [zh-tw]
 languageName = "繁體中文"
-languageCode = "zh-TW"
+languageCode = "zh-Hant-TW"
 contentDir = "content/zh-tw"
 weight = 2
