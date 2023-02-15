@@ -10,23 +10,26 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <div class="portfolio-menu">
+          <div class="row portfolio-menu">
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-              <input type="radio" name="shuffle-filter" id="all" class="btn-check" value="all" checked>
-              <label class="btn btn-sm btn-primary" for="all">
-                {{ i18n "all" }}
-              </label>
-              {{ $categories := slice -}}
-              {{ range .Data.Pages -}}
-              {{ $categories = $categories | append .Params.category -}}
-              {{ end -}}
-              {{ range ( $categories | uniq ) -}}
-              <input type="radio" name="shuffle-filter" id="{{ . }}" autocomplete="off" class="btn-check"
-                value="{{ . | urlize }}">
-              <label class="btn btn-sm btn-primary" for="{{ . }}">
-                {{ . }}
-              </label>
-              {{- end }}
+              <div class="col-md-12">
+                <input type="radio" name="shuffle-filter" id="all" class="btn-check" value="all" checked>
+                <label class="btn btn-sm btn-primary" for="all">
+                  {{ i18n "all" }}
+                </label>  
+
+                {{ $categories := slice -}}
+                {{ range .Data.Pages -}}
+                {{ $categories = $categories | append .Params.category -}}
+                {{ end -}}
+                {{ range ( $categories | uniq ) -}}
+                <input type="radio" name="shuffle-filter" id="{{ . }}" autocomplete="off" class="btn-check"
+                  value="{{ . | urlize }}">
+                <label class="btn btn-sm btn-primary" for="{{ . }}">
+                  {{ . }}
+                </label>
+                {{- end }}  
+              </div>
             </div>
           </div>
           <div class="row shuffle-wrapper">
@@ -35,14 +38,16 @@
             {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}}
             {{ $cats = apply $cats "urlize" "." | jsonify -}}
             <div class="col-md-4 portfolio-item shuffle-item" data-groups="{{ $cats }}">
-              {{ if isset .Params "image" -}}
-              <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-              {{- end }}
-              <div class="portfolio-hover">
-                <div class="portfolio-content">
-                  <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                  <p>{{ .Params.description }}</p>
-                </div>
+              <div class="block">
+                {{ if isset .Params "image" -}}
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+                {{- end }}
+                <div class="portfolio-hover">
+                  <div class="portfolio-content">
+                    <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <p>{{ .Params.description }}</p>
+                  </div>
+                </div>  
               </div>
             </div>
             {{- end }}
