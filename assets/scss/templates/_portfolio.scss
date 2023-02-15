@@ -43,6 +43,7 @@
       overflow: hidden;
       justify-content: center;
       display: flex;
+      object-fit:cover;
       }
 
       @media screen and (max-width:1000px) {
@@ -52,6 +53,7 @@
             overflow: hidden;
             justify-content: center;
             display: flex;
+            object-fit:cover;
         }   
       } 
 
